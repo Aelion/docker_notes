@@ -17,5 +17,6 @@ USER newuser
 WORKDIR
 ENTRYPOINT [ "/app/app.sh" ]
 
-# documents ports that containers created from image should expose
+# DOCUMENTS! ports that containers created from image should expose
+# does not automatically expose ports
 EXPOSE 8080
