@@ -1,0 +1,8 @@
+# This image is awesome!
+FROM ubuntu
+# ARG allows us to set a variable at build time
+ARG curl_bin=curl
+COPY . /app
+RUN apt -y update && apt -y install curl
+CMD [ "--argument" ]
+ENTRYPOINT [ "/app/app.sh" ]
