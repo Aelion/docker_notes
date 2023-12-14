@@ -9,9 +9,13 @@ docker run --rm e30ffc9cc8e5
 
 ##This image is awesome!
 FROM ubuntu
+
 COPY . /app
+
 RUN apt -y update && apt -y install curl
+
 ENTRYPOINT [ "/app/app.sh", "--argument" ]
+
 
 root@kubmaster:~/linkedin/04_03_before# docker run --rm my-image --whatever
 ============================================================
