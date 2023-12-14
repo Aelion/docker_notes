@@ -16,3 +16,6 @@ USER newuser
 # the last workdir will be used by containers
 WORKDIR
 ENTRYPOINT [ "/app/app.sh" ]
+
+# documents ports that containers created from image should expose
+EXPOSE 8080
