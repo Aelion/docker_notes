@@ -5,4 +5,6 @@ docker image build -t my-image .
 docker run --rm e30ffc9cc8e5
 
 # run docker image with argument and image name
- docker run --rm my-image --argument
+ docker run --rm my-image --whatever
+
+
