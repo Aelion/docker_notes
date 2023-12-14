@@ -10,4 +10,8 @@ RUN apt -y update && apt -y install curl
 CMD [ "--argument" ]
 # sets linux or windows user to be used for RUN commands and/or containers
 USER newuser
+# WORKDIR sets a working directory for RUN commands and / or containers
+# can use WORKDIR multiple times 
+# the last workdir will be used by containers
+WORKDIR
 ENTRYPOINT [ "/app/app.sh" ]
