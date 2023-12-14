@@ -9,6 +9,7 @@ COPY . /app
 RUN apt -y update && apt -y install curl
 CMD [ "--argument" ]
 # sets linux or windows user to be used for RUN commands and/or containers
+# can be overridden with docker run --user
 USER newuser
 # WORKDIR sets a working directory for RUN commands and / or containers
 # can use WORKDIR multiple times 
