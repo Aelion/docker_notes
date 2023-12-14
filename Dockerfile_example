@@ -1,6 +1,9 @@
 # This image is awesome!
 FROM ubuntu
 # ARG allows us to set a variable at build time
+# The argument has to be passed during build using --build-arg argument
+# like: docker build --build-arg curl_bin="curl=7.81.0" -t my-image
+# build will not fail when --build-arg is missing!
 ARG curl_bin=curl
 COPY . /app
 RUN apt -y update && apt -y install curl
