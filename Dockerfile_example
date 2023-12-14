@@ -8,4 +8,6 @@ ARG curl_bin=curl
 COPY . /app
 RUN apt -y update && apt -y install curl
 CMD [ "--argument" ]
+# sets linux or windows user to be used for RUN commands and/or containers
+USER newuser
 ENTRYPOINT [ "/app/app.sh" ]
