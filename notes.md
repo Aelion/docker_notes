@@ -57,6 +57,7 @@ PING google.com (173.194.45.70): 48 data bytes
 56 bytes from 173.194.45.70: icmp_seq=0 ttl=55 time=32.583 ms
 56 bytes from 173.194.45.70: icmp_seq=2 ttl=55 time=30.327 ms
 56 bytes from 173.194.45.70: icmp_seq=4 ttl=55 time=46.379 ms
+
 ^C--- google.com ping statistics ---
 5 packets transmitted, 3 packets received, 40% packet loss
 round-trip min/avg/max/stddev = 30.327/36.430/46.379/7.095 ms
