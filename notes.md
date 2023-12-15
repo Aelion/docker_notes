@@ -83,4 +83,7 @@ docker run -it test bash
 root@e8bb7249b843:/#  
 See this article from Brian DeHamer for even more details: https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/  
 
+# LOGGING
+## LOG DRIVERS
+Docker uses the json-file logging driver by default
 
