@@ -37,7 +37,8 @@ Otherwise, if you want to make an image for general purpose, you can leave ENTRY
 
 For example, if your Dockerfile is:
 
-FROM debian:wheezy
+FROM debian:wheezy  
+
 ENTRYPOINT ["/bin/ping"]
 CMD ["localhost"]
 Running the image without any argument will ping the localhost:
