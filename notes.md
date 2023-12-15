@@ -44,25 +44,25 @@ CMD ["localhost"]
 Running the image without any argument will ping the localhost:
 
 $ docker run -it test
-PING localhost (127.0.0.1): 48 data bytes
-56 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.096 ms  
+PING localhost (127.0.0.1): 48 data bytes  
+56 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.096 ms    
 
-56 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.088 ms
-56 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.088 ms
-^C--- localhost ping statistics ---
-3 packets transmitted, 3 packets received, 0% packet loss
-round-trip min/avg/max/stddev = 0.088/0.091/0.096/0.000 ms
-Now, running the image with an argument will ping the argument:
+56 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.088 ms  
+56 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.088 ms  
+^C--- localhost ping statistics ---  
+3 packets transmitted, 3 packets received, 0% packet loss  
+round-trip min/avg/max/stddev = 0.088/0.091/0.096/0.000 ms  
+Now, running the image with an argument will ping the argument:  
 
-$ docker run -it test google.com
-PING google.com (173.194.45.70): 48 data bytes
-56 bytes from 173.194.45.70: icmp_seq=0 ttl=55 time=32.583 ms
-56 bytes from 173.194.45.70: icmp_seq=2 ttl=55 time=30.327 ms
-56 bytes from 173.194.45.70: icmp_seq=4 ttl=55 time=46.379 ms
+$ docker run -it test google.com  
+PING google.com (173.194.45.70): 48 data bytes  
+56 bytes from 173.194.45.70: icmp_seq=0 ttl=55 time=32.583 ms  
+56 bytes from 173.194.45.70: icmp_seq=2 ttl=55 time=30.327 ms  
+56 bytes from 173.194.45.70: icmp_seq=4 ttl=55 time=46.379 ms  
 
-^C--- google.com ping statistics ---
-5 packets transmitted, 3 packets received, 40% packet loss
-round-trip min/avg/max/stddev = 30.327/36.430/46.379/7.095 ms
+^C--- google.com ping statistics ---  
+5 packets transmitted, 3 packets received, 40% packet loss  
+round-trip min/avg/max/stddev = 30.327/36.430/46.379/7.095 ms  
 For comparison, if your Dockerfile is:
 
 FROM debian:wheezy
