@@ -44,7 +44,8 @@ Running the image without any argument will ping the localhost:
 
 $ docker run -it test
 PING localhost (127.0.0.1): 48 data bytes
-56 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.096 ms
+56 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.096 ms  
+
 56 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.088 ms
 56 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.088 ms
 ^C--- localhost ping statistics ---
