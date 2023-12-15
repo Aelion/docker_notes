@@ -14,7 +14,7 @@ USER newuser
 # WORKDIR sets a working directory for RUN commands and / or containers
 # can use WORKDIR multiple times 
 # the last workdir will be used by containers
-WORKDIR
+WORKDIR /app
 ENTRYPOINT [ "/app/app.sh" ]
 
 # DOCUMENTS! ports that containers created from image should expose
