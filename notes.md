@@ -39,8 +39,8 @@ For example, if your Dockerfile is:
 
 FROM debian:wheezy  
 
-ENTRYPOINT ["/bin/ping"]
-CMD ["localhost"]
+ENTRYPOINT ["/bin/ping"]  
+CMD ["localhost"]  
 Running the image without any argument will ping the localhost:
 
 $ docker run -it test
