@@ -65,22 +65,22 @@ PING google.com (173.194.45.70): 48 data bytes
 round-trip min/avg/max/stddev = 30.327/36.430/46.379/7.095 ms  
 For comparison, if your Dockerfile is:
 
-FROM debian:wheezy
-CMD ["/bin/ping", "localhost"]
-Running the image without any argument will ping the localhost:
+FROM debian:wheezy  
+CMD ["/bin/ping", "localhost"]  
+Running the image without any argument will ping the localhost:  
 
-$ docker run -it test
-PING localhost (127.0.0.1): 48 data bytes
-56 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.076 ms
-56 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.087 ms
-56 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.090 ms
-^C--- localhost ping statistics ---
-3 packets transmitted, 3 packets received, 0% packet loss
-round-trip min/avg/max/stddev = 0.076/0.084/0.090/0.000 ms
-But running the image with an argument will run the argument:
+$ docker run -it test  
+PING localhost (127.0.0.1): 48 data bytes  
+56 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.076 ms  
+56 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.087 ms   
+56 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.090 ms  
+^C--- localhost ping statistics ---  
+3 packets transmitted, 3 packets received, 0% packet loss    
+round-trip min/avg/max/stddev = 0.076/0.084/0.090/0.000 ms  
+But running the image with an argument will run the argument:  
 
-docker run -it test bash
-root@e8bb7249b843:/#
-See this article from Brian DeHamer for even more details: https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
+docker run -it test bash 
+root@e8bb7249b843:/#  
+See this article from Brian DeHamer for even more details: https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/  
 
 
