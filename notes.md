@@ -93,3 +93,9 @@ Docker uses the json-file logging driver by default
 Host mode does not require publishing of ports by the container
 
 docker run --rm --net=host --entrypoint nc curlimages/curl -l -p 8080
+
+
+# # Disable networking entirely with NONE driver
+Container will get only a loopback interface so it can connect to itself and no other networks
+
+docker run --rm **--net=none** --entrypoint sh -i -t curlimages/curl 
