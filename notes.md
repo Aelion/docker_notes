@@ -95,18 +95,18 @@ Host mode does not require publishing of ports by the container
 docker run --rm --net=host --entrypoint nc curlimages/curl -l -p 8080
 
 
-# # Disable networking entirely with NONE driver
+## Disable networking entirely with NONE driver
 Container will get only a loopback interface so it can connect to itself and no other networks
 
 docker run --rm **--net=none** --entrypoint sh -i -t curlimages/curl 
 
-# # ADVANCED NETWORKING DRIVERS EXIST like macvlan and ipvlan (they give containers real IP addresses on your network
+## ADVANCED NETWORKING DRIVERS EXIST like macvlan and ipvlan (they give containers real IP addresses on your network
 macvlan gives containers individual mac adresses which can lead to network degradation 
 
-# # use customer network driver
+## use customer network driver
 docker network create -d macvlan --subnet SUBNET -o INTERFACE --gateway GATEWAY
 docker network create -d macvlan --subnet 192.168.1.0/24 -o eth0 --gateway 192.168.1.1 my-net
 
-# # overlay driver / network
+## overlay driver / network
 overlay creates a container network that spans multiple nodes
 
