@@ -87,3 +87,9 @@ See this article from Brian DeHamer for even more details: https://www.ctl.io/de
 ## LOG DRIVERS
 Docker uses the json-file logging driver by default
 
+
+# Networking
+# # host mode networking
+Host mode does not require publishing of ports by the container
+
+docker run --rm --net=host --entrypoint nc curlimages/curl -l -p 8080
