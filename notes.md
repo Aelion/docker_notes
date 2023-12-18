@@ -107,4 +107,6 @@ macvlan gives containers individual mac adresses which can lead to network degra
 docker network create -d macvlan --subnet SUBNET -o INTERFACE --gateway GATEWAY
 docker network create -d macvlan --subnet 192.168.1.0/24 -o eth0 --gateway 192.168.1.1 my-net
 
+# # overlay driver / network
+overlay creates a container network that spans multiple nodes
 
