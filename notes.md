@@ -112,6 +112,12 @@ overlay creates a container network that spans multiple nodes
 
 
 
-# Container creation
+# Container build and creation
+ 
+### build a Docker image from a Dockerfile present in the current directory, tagging the resulting image as "myapp".
+ > docker build -t myapp .
+
 ### Run container with volume mounted 
 docker run --rm -d -p 8888:80 -v /home/mariusz/sandbox/projects/static-website:/usr/share/nginx/html nginx:latest
+
+
