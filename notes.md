@@ -112,5 +112,6 @@ overlay creates a container network that spans multiple nodes
 
 
 
+# Container creation
 ### Run container with volume mounted 
 docker run --rm -d -p 8888:80 -v /home/mariusz/sandbox/projects/static-website:/usr/share/nginx/html nginx:latest
