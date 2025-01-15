@@ -110,3 +110,7 @@ docker network create -d macvlan --subnet 192.168.1.0/24 -o eth0 --gateway 192.1
 ## overlay driver / network
 overlay creates a container network that spans multiple nodes
 
+
+
+### Run container with volume mounted 
+docker run --rm -d -p 8888:80 -v /home/mariusz/sandbox/projects/static-website:/usr/share/nginx/html nginx:latest
